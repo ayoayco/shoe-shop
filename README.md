@@ -28,4 +28,4 @@ Dependencies such as react and react-dom are shared across applications. They ar
 
 ## More info
 
-This project was initially forked from [this repo](https://github.com/sasoria/astro-microfrontends)
+This project was initially forked from [this repo](https://github.com/sasoria/astro-microfrontends), then moved to a new repo for a cleaner history.
