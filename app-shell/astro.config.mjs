@@ -7,14 +7,21 @@ export default defineConfig({
     react(),
     solidJs(),
     {
-      name: 'importmap-externals',
+      name: "importmap-externals",
       hooks: {
-        'astro:build:setup': ({ vite, target }) => {
-          if(target === 'client') {
-            vite.build.rollupOptions["external"] = ["react", "react-dom", "solid-js"];
+        "astro:build:setup": ({ vite, target }) => {
+          if (target === "client") {
+            vite.build.rollupOptions["external"] = [
+              "react",
+              "react-dom",
+              "solid-js",
+              "app-cart",
+              "app-heading",
+              "app-products",
+            ];
           }
-        }
-       }
+        },
+      },
     },
   ],
 });

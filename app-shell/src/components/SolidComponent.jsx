@@ -1,9 +1,9 @@
-import MicroFrontendC from "http://localhost:7300/bundle.js";
+import Products from "app-products";
 
 function App() {
   return (
     <>
-      <MicroFrontendC />
+      <Products />
     </>
   );
 }

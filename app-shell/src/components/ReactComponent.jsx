@@ -1,15 +1,13 @@
-import MicroFrontendA from "http://localhost:7100/bundle.js";
-import MicroFrontendB from "http://localhost:7200/bundle.js";
+import Cart from "app-cart";
+import Heading from "app-heading";
 
 const ReactComponent = (props) => {
   const { title } = props;
 
-  console.log(">>> title", title);
-
   return (
     <>
-      <MicroFrontendB title={title} />
-      <MicroFrontendA />
+      <Heading title={title} />
+      <Cart />
     </>
   );
 };
