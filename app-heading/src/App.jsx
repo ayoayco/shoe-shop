@@ -9,7 +9,7 @@ const App = (props) => {
 
   return (
     <section className="app-b">
-      <h1>
+      <h1 style={{ fontSize: "40px", marginTop: "0" }}>
         {title} <span style={{ background: "red", color: "white", padding: "0 0.25rem" }}>{count}</span>
       </h1>
     </section>
