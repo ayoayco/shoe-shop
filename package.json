@@ -1,0 +1,21 @@
+{
+  "name": "astro-microfrontends",
+  "version": "1.0.0",
+  "description": "This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do client-side composition of microfrontends. Express is used for serving assets, but ideally one would have a dedicated CDN hosting them.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build --workspaces --if-present",
+    "preview": "npm run preview -workspaces --if-present"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "app-cart",
+    "app-heading",
+    "app-products",
+    "app-shell",
+    "utils"
+  ]
+}
