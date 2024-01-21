@@ -6,15 +6,20 @@ An e-commerce page as a demonstration of using [Astro](https://astro.build) as s
 
 ## About
 
-This project was initially forked from [this repo](https://github.com/sasoria/astro-microfrontends), then moved here for a cleaner history. Each app is now a node workspace to allow for running common commands easily and developing libraries they can install as dependency (e.g., `utils`). In a real-world setting they could be maintained in separate repositories by different teams.
+Each app is a node workspace to allow for running common commands easily and developing libraries they can install as dependency (e.g., `utils`). In a real-world setting they could be maintained in separate repositories by different teams.
 
 This demo takes advantage of EcmaScript Modules (ESM) and url-imports to do client-side composition of microfrontends. Express is used for serving assets, but ideally one would have a dedicated CDN hosting them.
+
 
 ### Code structure
 1. `app-heading` & `app-cart` are React apps
 2. `app-products` are a SolidJS app
 3. `app-shell` is an Astro app
 4. `utils` is a library for utilities that the micro-frontend apps can install as dependency
+
+### Background
+
+This project was initially forked from [this repo](https://github.com/sasoria/astro-microfrontends), then moved here for a cleaner history. Massive thanks to [sasoria](https://github.com/sasoria) for his work on the initial demo.
 
 ## Features
 
