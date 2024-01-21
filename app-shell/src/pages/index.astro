@@ -11,16 +11,16 @@ const appName = 'Scalable Shoe Shop'
     <meta name="viewport" content="width=device-width" />
     <title>{appName}</title>
     <script type="importmap">
-    {
-      "imports": {
-        "app-cart": "http://localhost:7100/bundle.js",
-        "app-heading": "http://localhost:7200/bundle.js",
-        "app-products": "http://localhost:7300/bundle.js",
-        "react": "https://esm.sh/stable/react@18.2.0/es2022/react.mjs",
-        "react-dom": "https://esm.sh/v135/react-dom@18.2.0/es2022/react-dom.mjs",
-        "solid-js": "https://esm.sh/stable/solid-js@1.8.11/es2022/solid-js.mjs"
+      {
+        "imports": {
+          "app-cart": "http://localhost:7100/bundle.js",
+          "app-heading": "http://localhost:7200/bundle.js",
+          "app-products": "http://localhost:7300/bundle.js",
+          "react": "https://esm.sh/stable/react@18.2.0/es2022/react.mjs",
+          "react-dom": "https://esm.sh/v135/react-dom@18.2.0/es2022/react-dom.mjs",
+          "solid-js": "https://esm.sh/stable/solid-js@1.8.11/es2022/solid-js.mjs"
+        }
       }
-    }
     </script>
   </head>
   <body>
@@ -32,28 +32,14 @@ const appName = 'Scalable Shoe Shop'
 </html>
 
 <style>
-html {
-  font-family: system-ui, sans-serif;
-  background-color: #f6f6f6;
-}
+  html {
+    font-family: system-ui, sans-serif;
+    background-color: #f6f6f6;
+  }
 
-main {
-  margin: auto;
-  padding: 1.5rem;
-  max-width: 60ch;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin: 0;
-}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
 </style>
-
-<script>
-  window.addEventListener('message', (event) => {
-    if (event.data.source === 'app-a') {
-      console.log('>>> message', event)
-    }
-  })
-</script>
