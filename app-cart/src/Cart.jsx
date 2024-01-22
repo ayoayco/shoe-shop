@@ -55,6 +55,11 @@ class Cart extends Component {
     if (index > -1) {
       const updatedProducts = [...products];
       updatedProducts[index].count--;
+
+      if (updatedProducts[index].count === 0) {
+        updatedProducts.splice(index, 1);
+      }
+
       this.setState({ products: updatedProducts });
     }
   };
