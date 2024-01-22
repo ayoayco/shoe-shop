@@ -1,3 +1,4 @@
+import { broadcast } from "utils";
 import styles from "./App.module.css";
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
   ];
 
   const addToCart = (product) => {
-    console.log(">>> add to cart", product);
     // broadcast add product to cart
+    broadcast("add-product", product);
   };
 
   return (
