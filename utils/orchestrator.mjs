@@ -1,5 +1,4 @@
 // implement messaging system between MF's
-const listeners = {};
 
 // - broadcast message
 export function broadcast(action, data) {
