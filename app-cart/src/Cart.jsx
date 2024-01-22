@@ -1,5 +1,4 @@
 // @ts-check
-import { broadcast, listen } from "utils";
 import React, { Component } from "react";
 
 class Cart extends Component {
@@ -65,15 +64,14 @@ class Cart extends Component {
   };
 
   componentDidMount() {
-    broadcast("update-count", this.getTotalItems());
-    listen("add-product", this.addProduct);
+    // broadcast initial count
+    // listen to add-to-cart messages
   }
 
   componentDidUpdate(prevProps, prevState) {
     const { products } = this.state;
-    if (prevState.products !== products) {
-      broadcast("update-count", this.getTotalItems());
-    }
+
+    // if products changed, broadcast new count
   }
 
   render() {

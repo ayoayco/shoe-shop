@@ -1,4 +1,3 @@
-import { listen } from "utils";
 import React, { useEffect } from "react";
 import "./App.css";
 
@@ -7,11 +6,6 @@ const App = (props) => {
   const [count, setCount] = React.useState(0);
 
   // listen to add-to-cart messages
-  useEffect(() =>
-    listen("update-count", (count) => {
-      setCount(count);
-    })
-  );
 
   return (
     <section className="app-b">

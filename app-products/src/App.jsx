@@ -1,4 +1,3 @@
-import { broadcast } from "utils";
 import styles from "./App.module.css";
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
 
   const addToCart = (product) => {
     // broadcast add product to cart
-    broadcast("add-product", product);
   };
 
   return (
