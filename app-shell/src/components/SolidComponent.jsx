@@ -1,9 +1,10 @@
 import Products from "app-products";
 
-function App() {
+function App(props) {
+  const { products } = props;
   return (
     <>
-      <Products />
+      <Products products={products} />
     </>
   );
 }

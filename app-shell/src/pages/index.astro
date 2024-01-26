@@ -1,7 +1,31 @@
 ---
 import ReactComponent from "../components/ReactComponent.jsx";
 import SolidComponent from "../components/SolidComponent.jsx";
-const appName = 'Scalable Shoe Shop'
+const appName = 'Scalable Shoe Shop';
+
+// shell can fetch from a database
+const products = [
+    {
+      name: "Shoe A",
+      description: "It is a good shoe",
+      price: 100,
+    },
+    {
+      name: "Shoe B",
+      description: "It is a comfortable shoe",
+      price: 120,
+    },
+    {
+      name: "Shoe C",
+      description: "It is a stylish shoe",
+      price: 150,
+    },
+    {
+      name: "Shoe D",
+      description: "It is a durable shoe",
+      price: 90,
+    },
+  ];
 ---
 
 <!DOCTYPE html>
@@ -26,7 +50,7 @@ const appName = 'Scalable Shoe Shop'
   <body>
     <main>
       <ReactComponent title={appName} client:only="react" />
-      <SolidComponent client:only="solid" />
+      <SolidComponent products={products} client:only="solid" />
     </main>
   </body>
 </html>

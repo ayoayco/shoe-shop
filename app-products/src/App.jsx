@@ -1,33 +1,12 @@
 import { broadcast } from "utils";
 import styles from "./App.module.css";
 
-function App() {
-  const products = [
-    {
-      name: "Shoe A",
-      description: "It is a good shoe",
-      price: 100,
-    },
-    {
-      name: "Shoe B",
-      description: "It is a comfortable shoe",
-      price: 120,
-    },
-    {
-      name: "Shoe C",
-      description: "It is a stylish shoe",
-      price: 150,
-    },
-    {
-      name: "Shoe D",
-      description: "It is a durable shoe",
-      price: 90,
-    },
-  ];
+function App(props) {
+  const { products = [] } = props;
 
   const addToCart = (product) => {
     // broadcast add product to cart
-    broadcast("add-product", product);
+    broadcast("add-to-cart", product);
   };
 
   return (

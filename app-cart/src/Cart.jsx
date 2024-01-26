@@ -47,6 +47,7 @@ class Cart extends Component {
     } else {
       this.setState({ products: [...products, { ...product, count: 1 }] });
     }
+    broadcast("update-count", this.getTotalItems());
   };
 
   removeProduct = (product) => {
@@ -61,12 +62,15 @@ class Cart extends Component {
       }
 
       this.setState({ products: updatedProducts });
+      broadcast("update-count", this.getTotalItems());
     }
   };
 
   componentDidMount() {
+    // broadcast initial count
     broadcast("update-count", this.getTotalItems());
-    listen("add-product", this.addProduct);
+    // listen to add-to-cart messages
+    listen("add-to-cart", this.addProduct);
   }
 
   componentDidUpdate(prevProps, prevState) {

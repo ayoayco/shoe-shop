@@ -6,8 +6,8 @@ const App = (props) => {
   const { title } = props;
   const [count, setCount] = React.useState(0);
 
-  // listen to add-to-cart messages
   useEffect(() =>
+    // listen to update count messages
     listen("update-count", (count) => {
       setCount(count);
     })
