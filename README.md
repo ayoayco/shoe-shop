@@ -33,7 +33,7 @@ DX in this demo is not that easy, because we are simulating the development of m
 
 Currently each app has a `build:preview` script that represents the process of building & deploying them, ideally in a CDN.
 
-Open the app-shell and each MF app (i.e., app-cart, app-heading, app-products) in a separate terminals and run "npm run build:preview" for each.
+Open the app-shell and each MF app (i.e., app-cart, app-heading, app-products) in separate terminals and run "npm run build:preview" for each.
 
 You have to rerun this for any app you modify.
 
