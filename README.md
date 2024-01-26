@@ -29,17 +29,15 @@ This project was initially forked from [this repo](https://github.com/sasoria/as
 
 ## Usage
 
-### Micro frontends
+DX in this demo is not that easy, because we are simulating the development of multiple apps that in reality would have separate delivery pipelines and possibly maintained by different teams.
 
-- Build each micro frontend with `npm run build`
-- Start each micro frontend with `npm run preview`
+Currently each app has a `build:preview` script that represents the process of building & deploying them, ideally in a CDN.
 
-For production you would start the node server in the `server` folder, after building.
+Open the app-shell and each MF app (i.e., app-cart, app-heading, app-products) in a separate terminals and run "npm run build:preview" for each.
 
-### Shell
+You have to rerun this for any app you modify.
 
-- Build the shell with `npm run build`
-- Start the shell with `npm run preview`
+You will see the benefit of this in scale as you don't need to rebuild a single big app for changes only in smaller frontend parts.
 
 ## Shared dependencies
 
