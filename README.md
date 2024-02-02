@@ -2,6 +2,8 @@
 
 An e-commerce page as a demonstration of using [Astro](https://astro.build) as shell for a microfrontends application.
 
+Demo was given in a talk about [Astro & Micro-Frontends](https://www.linkedin.com/posts/planon_softwaredevelopment-developmentmeetup-microfrontend-activity-7159166634534846465-UXBu)
+
 <img src="https://raw.githubusercontent.com/ayoayco/shoe-shop/main/assets/sss-ss.png" alt="Scalable Shoe Shop Screenshot " />
 
 ## About
