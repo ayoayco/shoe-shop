@@ -1,3 +1,6 @@
+> [!WARNING]
+> This is just a demonstration, not a recommendation. Don't hesitate to reach out if you have questions. -ayo 
+
 # Scalable Shoe Shop
 
 An e-commerce page as a demonstration of using [Astro](https://astro.build) as shell for a microfrontends application.
